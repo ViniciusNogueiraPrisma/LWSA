@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html class="no-js" lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LWSA RI</title>
+    <meta name="description" content="" />
+    <meta property="og:title" content="LWSA RI" />
+    <meta property="og:description" content="" />
+    <meta property="og:image" content="./images/thumb-client.jpg" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="627" />
+    <link rel="shortcut icon" href="./images/favicon.png" sizes="60x60" />
+
+    <!-- CSS Libraries -->
+    <link rel="stylesheet" href="css/import.dist.min.css" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div id="searchBox">
+      <div class="container container-full">
+        <div class="wrapper">
+          <div class="input-group">
+            <input
+              type="text"
+              class="form-control inputBusca"
+              placeholder="Digite aqui a sua busca"
+            />
+
+            <div class="input-group-append">
+              <button
+                type="button"
+                class="input-group-text close-search-box"
+                role="button"
+              >
+                <img
+                  src="./images/icon-close.svg"
+                  alt="Close"
+                  title="Fechar Caixa de Pesquisa"
+                />
+              </button>
+            </div>
+          </div>
+
+          <a href="#" class="link-ver-todos">Ver todos os resultados</a>
+          <div class="search-help">
+            <small> Aperte Enter para pesquisar </small>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="main-header">
+      <div class="container container-full">
+        <header class="header">
+          <div class="container container-full">
+            <div class="content-header">
+              <div class="content-left">
+                <div class="logo">
+                  <a href="/" aria-label="">
+                    <img
+                      class="logo-base"
+                      src="images/logo-client.svg"
+                      alt="Logotipo"
+                    />
+                  </a>
+
+                  <p class="logo-text">
+                    Relações <br />
+                    com Investidores
+                  </p>
+                </div>
+
+                <div class="trade-menu">
+                  <div class="indices">
+                    <div class="indice-item">
+                      <p>LWSA3</p>
+                      <span>R$ 4,08</span>
+                      <span>-1,69%</span>
+                    </div>
+
+                    <div class="indice-item">
+                      <p>IBOV</p>
+                      <span>156.470</span>
+                      <span>-0,33%</span>
+                    </div>
+                  </div>
+
+                  <div class="language">
+                    <div class="language-item">
+                      <a href="#">
+                        <img src="images/icon-en.svg" alt="English" />
+                        EN
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="inst">
+                    <a href="#">
+                      INSTITUCIONAL
+                      <img src="images/icon-world.svg" alt="World" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="content-right">
+                <nav class="navigation">
+                  <div class="navigation-pages">
+                    <div class="menu-items dropdown">
+                      <a
+                        href="investir.html"
+                        class="link-menu-mobile-a dropdown-toggle"
+                      >
+                        <p>A Companhia</p>
+                      </a>
+                      <!-- Dropdown individual para mobile -->
+                      <div class="dropdown-menu mobile-dropdown">
+                        <a href="#" class="dropdown-item">Histórico</a>
+                        <a href="#" class="dropdown-item">Nosso Ecossistema</a>
+                        <a href="#" class="dropdown-item"
+                          >Nossas Unidades de Negócios</a
+                        >
+                        <a href="#" class="dropdown-item">Aquisições</a>
+                      </div>
+                    </div>
+
+                    <div class="menu-items dropdown">
+                      <a href="#" class="link-menu-mobile-a dropdown-toggle">
+                        <p>Governança Corporativa</p>
+                      </a>
+                      <!-- Dropdown individual para mobile -->
+                      <div class="dropdown-menu mobile-dropdown">
+                        <a href="#" class="dropdown-item"
+                          >Composição Acionária</a
+                        >
+                        <a href="#" class="dropdown-item"
+                          >Diretoria, Conselhos e Comitês</a
+                        >
+                        <a href="#" class="dropdown-item"
+                          >Estatuto, Políticas, Códigos e Regimentos</a
+                        >
+                        <a href="#" class="dropdown-item">Formulários CVM</a>
+                        <a href="#" class="dropdown-item"
+                          >Reuniões de Conselho e Assembleias</a
+                        >
+                        <a href="#" class="dropdown-item"
+                          >Comunicação ao Mercado</a
+                        >
+                        <a href="#" class="dropdown-item">ESG</a>
+                        <a href="#" class="dropdown-item"
+                          >Informe de Governança</a
+                        >
+                      </div>
+                    </div>
+
+                    <div class="menu-items dropdown">
+                      <a
+                        href="fundos.html"
+                        class="link-menu-mobile-a dropdown-toggle"
+                      >
+                        <p>Informações Financeiras</p>
+                      </a>
+                      <!-- Dropdown individual para mobile -->
+                      <div class="dropdown-menu mobile-dropdown">
+                        <a href="#" class="dropdown-item"
+                          >Central de Resultados</a
+                        >
+                        <a href="#" class="dropdown-item">Planilha Dinâmica</a>
+                        <a href="#" class="dropdown-item"
+                          >Cobertura de Analistas</a
+                        >
+                        <a href="#" class="dropdown-item"
+                          >Cotações e Gráficos</a
+                        >
+                        <a href="#" class="dropdown-item">Apresentações</a>
+                      </div>
+                    </div>
+
+                    <div class="menu-items dropdown">
+                      <a href="#" class="link-menu-mobile-a dropdown-toggle">
+                        <p>Serviços aos Investidores</p>
+                      </a>
+                      <!-- Dropdown individual para mobile -->
+                      <div class="dropdown-menu mobile-dropdown">
+                        <a href="#" class="dropdown-item">Investor Day</a>
+                        <a href="#" class="dropdown-item">Documentos CVM</a>
+                        <a href="#" class="dropdown-item"
+                          >Calendário Corporativo</a
+                        >
+                        <a href="#" class="dropdown-item">Fale com RI</a>
+                        <a href="#" class="dropdown-item">Glossário</a>
+                        <a href="#" class="dropdown-item"
+                          >Perguntas Frequentes</a
+                        >
+                        <a href="#" class="dropdown-item"
+                          >Cadastre-se no Mailing</a
+                        >
+                        <a href="#" class="dropdown-item">Notas Legais</a>
+                        <a
+                          href="https://lwsa.tech/politicas/"
+                          class="dropdown-item"
+                          >Política de Privacidade</a
+                        >
+                        <a href="#" class="dropdown-item"
+                          >Entrevistas e Podcasts</a
+                        >
+                      </div>
+                    </div>
+
+                    <!-- Mega-menu unificado para desktop -->
+                    <div class="dropdown-menu mega-menu">
+                      <div class="mega-menu-column">
+                        <a href="#" class="dropdown-item">Histórico</a>
+                        <a href="#" class="dropdown-item">Nosso Ecossistema</a>
+                        <a href="#" class="dropdown-item"
+                          >Nossas Unidades de Negócios</a
+                        >
+                        <a href="#" class="dropdown-item">Aquisições</a>
+                      </div>
+                      <div class="mega-menu-column">
+                        <a href="#" class="dropdown-item"
+                          >Composição Acionária</a
+                        >
+                        <a href="#" class="dropdown-item"
+                          >Diretoria, Conselhos e Comitês</a
+                        >
+                        <a href="#" class="dropdown-item"
+                          >Estatuto, Políticas, Códigos e Regimentos</a
+                        >
+                        <a href="#" class="dropdown-item">Formulários CVM</a>
+                        <a href="#" class="dropdown-item"
+                          >Reuniões de Conselho e Assembleias</a
+                        >
+                        <a href="#" class="dropdown-item"
+                          >Comunicação ao Mercado</a
+                        >
+                        <a href="#" class="dropdown-item">ESG</a>
+                        <a href="#" class="dropdown-item"
+                          >Informe de Governança</a
+                        >
+                      </div>
+                      <div class="mega-menu-column">
+                        <a href="#" class="dropdown-item"
+                          >Central de Resultados</a
+                        >
+                        <a href="#" class="dropdown-item">Planilha Dinâmica</a>
+                        <a href="#" class="dropdown-item"
+                          >Cobertura de Analistas</a
+                        >
+                        <a href="#" class="dropdown-item"
+                          >Cotações e Gráficos</a
+                        >
+                        <a href="#" class="dropdown-item">Apresentações</a>
+                      </div>
+                      <div class="mega-menu-column">
+                        <a href="#" class="dropdown-item">Investor Day</a>
+                        <a href="#" class="dropdown-item">Documentos CVM</a>
+                        <a href="#" class="dropdown-item"
+                          >Calendário Corporativo</a
+                        >
+                        <a href="#" class="dropdown-item">Fale com RI</a>
+                        <a href="#" class="dropdown-item">Glossário</a>
+                        <a href="#" class="dropdown-item"
+                          >Perguntas Frequentes</a
+                        >
+                        <a href="#" class="dropdown-item"
+                          >Cadastre-se no Mailing</a
+                        >
+                        <a href="#" class="dropdown-item">Notas Legais</a>
+                        <a
+                          href="https://lwsa.tech/politicas/"
+                          class="dropdown-item"
+                          >Política de Privacidade</a
+                        >
+                        <a href="#" class="dropdown-item"
+                          >Entrevistas e Podcasts</a
+                        >
+                      </div>
+                    </div>
+
+                    <div class="header-actions">
+                      <div class="search-bar">
+                        <a href="#">
+                          <img src="./images/icon_search.svg" alt="Search" />
+                        </a>
+                      </div>
+
+                      <!-- Mobile Menu Toggle -->
+                      <button
+                        class="mobile-menu-toggle"
+                        id="mobileMenuToggle"
+                        aria-label="Menu"
+                      >
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                      </button>
+                    </div>
+                  </div>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </header>
+      </div>
+    </div>
+
+    <div class="accessibility-bar">
+      <div class="accessibility-bar-content">
+        <button
+          type="button"
+          class="accessibility-btn toggle-mode"
+          id="toggleMode"
+          aria-label="Alterar contraste"
+          data-bs-toggle="tooltip"
+          data-bs-placement="left"
+          data-bs-title="Contraste"
+        >
+          <img src="./images/icon-contraste.svg" class="icon" alt="Contraste" />
+          <span class="text">Contraste</span>
+        </button>
+
+        <button
+          type="button"
+          class="accessibility-btn increase-font"
+          id="increaseFont"
+          aria-label="Aumentar fonte"
+          data-bs-toggle="tooltip"
+          data-bs-placement="left"
+          data-bs-title="Aumentar fonte"
+        >
+          <img
+            src="./images/icon-increase-font.svg"
+            class="icon"
+            alt="Aumentar fonte"
+          />
+          <span class="text">Aumentar fonte</span>
+        </button>
+
+        <button
+          type="button"
+          class="accessibility-btn decrease-font"
+          id="decreaseFont"
+          aria-label="Diminuir fonte"
+          data-bs-toggle="tooltip"
+          data-bs-placement="left"
+          data-bs-title="Diminuir fonte"
+        >
+          <img
+            src="./images/icon-redduce-font.svg"
+            class="icon"
+            alt="Diminuir fonte"
+          />
+          <span class="text">Diminuir fonte</span>
+        </button>
+
+        <a
+          href="#"
+          class="accessibility-btn decrease-link"
+          aria-label="Informações de acessibilidade"
+          data-bs-toggle="tooltip"
+          data-bs-placement="left"
+          data-bs-title="Acessibilidade"
+        >
+          Acessibilidade
+        </a>
+      </div>
+    </div>
+
+    <div class="banner-home">
+      <div class="video-banner">
+        <video src="videos/video-banner.mp4" autoplay muted loop></video>
+      </div>
+    </div>
+
+    <div class="central-home p-80">
+      <div class="container container-full">
+        <div class="content-central-home">
+          <div class="central-resultados cards-central">
+            <div class="content-main">
+              <div class="title-central">
+                <h3>Central de Resultados</h3>
+              </div>
+
+              <div class="content-central-resultados">
+                <h3 class="title-resultados">3T25</h3>
+
+                <div class="list-central-resultados">
+                  <a href="#" class="item-resultado">
+                    <p>Release de Resultados</p>
+
+                    <img src="images/icon-pdf.svg" alt="PDF" />
+                  </a>
+
+                  <a href="#" class="item-resultado">
+                    <p>Demonstrações Financeiras</p>
+
+                    <img src="images/icon-pdf.svg" alt="PDF" />
+                  </a>
+
+                  <a href="#" class="item-resultado">
+                    <p>Apresentação de Resultados</p>
+
+                    <img src="images/icon-pdf.svg" alt="PDF" />
+                  </a>
+
+                  <a href="#" class="item-resultado">
+                    <p>ITR</p>
+
+                    <img src="images/icon-pdf.svg" alt="PDF" />
+                  </a>
+
+                  <a href="#" class="item-resultado">
+                    <p>Formulário de Referência</p>
+
+                    <img src="images/icon-pdf.svg" alt="PDF" />
+                  </a>
+
+                  <a href="#" class="item-resultado">
+                    <p>Relatório ESG</p>
+
+                    <img src="images/icon-pdf.svg" alt="PDF" />
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <a href="#" class="link-ver-todos">Ver todos os resultados</a>
+          </div>
+
+          <div class="central-atts cards-central">
+            <div class="content-main">
+              <div class="title-central">
+                <h3>Últimas Atualizações</h3>
+              </div>
+
+              <div class="list-atts">
+                <div class="item-att">
+                  <span>13/Nov</span>
+                  <p>Fato Relevante</p>
+                </div>
+
+                <div class="item-att">
+                  <span>31/Out</span>
+                  <p>Formulário Consolidado</p>
+                </div>
+
+                <div class="item-att">
+                  <span>07/Out</span>
+                  <p>Teleconferência de Resultados 3T25</p>
+                </div>
+
+                <div class="item-att">
+                  <span>26/Nov</span>
+                  <p>Teleconferência de Resultados 4T25</p>
+                </div>
+              </div>
+            </div>
+
+            <a href="#" class="link-ver-todos">Ver todas as atualizações</a>
+          </div>
+
+          <div class="central-eventos cards-central">
+            <div class="content-main">
+              <div class="title-central">
+                <h3>Próximos Eventos</h3>
+              </div>
+
+              <div class="content-central-eventos">
+                <div class="list-events">
+                  <div class="item-events">
+                    <div class="date">
+                      <span>05/Dez</span>
+                      <p>Assembleia Geral Ordinária</p>
+                    </div>
+
+                    <div class="links-email">
+                      <a href="#" class="link-event">
+                        <img src="images/icon-gmal.svg" alt="Gmail" />
+                      </a>
+                      <a href="#" class="link-event">
+                        <img src="images/icon-outlook.svg" alt="Outlook" />
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="item-events">
+                    <div class="date">
+                      <span>05/Dez</span>
+                      <p>Assembleia Geral Ordinária</p>
+                    </div>
+
+                    <div class="links-email">
+                      <a href="#" class="link-event">
+                        <img src="images/icon-gmal.svg" alt="Gmail" />
+                      </a>
+                      <a href="#" class="link-event">
+                        <img src="images/icon-outlook.svg" alt="Outlook" />
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="item-events">
+                    <div class="date">
+                      <span>05/Dez</span>
+                      <p>Assembleia Geral Ordinária</p>
+                    </div>
+
+                    <div class="links-email">
+                      <a href="#" class="link-event">
+                        <img src="images/icon-gmal.svg" alt="Gmail" />
+                      </a>
+                      <a href="#" class="link-event">
+                        <img src="images/icon-outlook.svg" alt="Outlook" />
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="item-events">
+                    <div class="date">
+                      <span>05/Dez</span>
+                      <p>Assembleia Geral Ordinária</p>
+                    </div>
+
+                    <div class="links-email">
+                      <a href="#" class="link-event">
+                        <img src="images/icon-gmal.svg" alt="Gmail" />
+                      </a>
+                      <a href="#" class="link-event">
+                        <img src="images/icon-outlook.svg" alt="Outlook" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <a href="#" class="link-ver-todos">Ver todos os eventos</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="apresentacao-home">
+      <div class="container container-full">
+        <div class="content-apresentacao">
+          <h2>
+            O nosso propósito mudou para:
+            <b
+              >transformar negócios para crescerem e prosperarem por meio da
+              tecnologia.</b
+            >
+          </h2>
+
+          <video src="videos/videoplayback.mp4" controls></video>
+        </div>
+      </div>
+    </div>
+
+    <div class="destaques-home p-80">
+      <div class="container container-full">
+        <div class="content-destaques">
+          <div class="card-destaque">
+            <h2>Nossos Destaques <b>3T25</b></h2>
+          </div>
+
+          <div class="card-destaque">
+            <div class="icon-card">
+              <img src="images/icon-card-1.svg" alt="" />
+            </div>
+
+            <div class="infos-card">
+              <h3>R$ 2,1 bilhões</h3>
+              <p>Receita Líquida</p>
+            </div>
+          </div>
+
+          <div class="card-destaque">
+            <div class="icon-card">
+              <img src="images/icon-card-2.svg" alt="" />
+            </div>
+
+            <div class="infos-card">
+              <h3>R$ 263 milhões</h3>
+              <p>Lucro Líquido</p>
+            </div>
+          </div>
+
+          <div class="card-destaque">
+            <div class="icon-card">
+              <img src="images/icon-card-3.svg" alt="" />
+            </div>
+
+            <div class="infos-card">
+              <h3>R$ 428 milhões</h3>
+              <p>Fluxo de Caixa ao Acionista</p>
+            </div>
+          </div>
+
+          <div class="card-destaque">
+            <div class="icon-card">
+              <img src="images/icon-card-4.svg" alt="" />
+            </div>
+
+            <div class="infos-card">
+              <h3>0,7x</h3>
+              <p>Dívida Líquida/EBITDA Ajust. UDM (Ex IFRS-16)</p>
+            </div>
+          </div>
+
+          <div class="card-destaque">
+            <div class="icon-card">
+              <img src="images/icon-card-5.svg" alt="" />
+            </div>
+
+            <div class="infos-card">
+              <h3>575 mil</h3>
+              <p>Clientes</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="js/main.js"></script>
+    <script src="js/swiper.js"></script>
+  </body>
+</html>
