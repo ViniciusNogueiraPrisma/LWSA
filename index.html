@@ -64,7 +64,6 @@
             </div>
           </div>
 
-          <a href="#" class="link-ver-todos">Ver todos os resultados</a>
           <div class="search-help">
             <small> Aperte Enter para pesquisar </small>
           </div>
@@ -94,17 +93,19 @@
                 </div>
 
                 <div class="trade-menu">
-                  <div class="indices">
-                    <div class="indice-item">
-                      <p>LWSA3</p>
-                      <span>R$ 4,08</span>
-                      <span>-1,69%</span>
-                    </div>
+                  <div class="swiper indices-swiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide indice-item">
+                        <p>LWSA3</p>
+                        <span>R$ 4,08</span>
+                        <span>-1,69%</span>
+                      </div>
 
-                    <div class="indice-item">
-                      <p>IBOV</p>
-                      <span>156.470</span>
-                      <span>-0,33%</span>
+                      <div class="swiper-slide indice-item">
+                        <p>IBOV</p>
+                        <span>156.470</span>
+                        <span>-0,33%</span>
+                      </div>
                     </div>
                   </div>
 
@@ -127,6 +128,17 @@
               </div>
 
               <div class="content-right">
+                <!-- Mobile Menu Toggle -->
+                <button
+                  class="mobile-menu-toggle"
+                  id="mobileMenuToggle"
+                  aria-label="Menu"
+                >
+                  <span class="hamburger-line"></span>
+                  <span class="hamburger-line"></span>
+                  <span class="hamburger-line"></span>
+                </button>
+
                 <nav class="navigation">
                   <div class="navigation-pages">
                     <div class="menu-items dropdown">
@@ -136,44 +148,12 @@
                       >
                         <p>A Companhia</p>
                       </a>
-                      <!-- Dropdown individual para mobile -->
-                      <div class="dropdown-menu mobile-dropdown">
-                        <a href="#" class="dropdown-item">Histórico</a>
-                        <a href="#" class="dropdown-item">Nosso Ecossistema</a>
-                        <a href="#" class="dropdown-item"
-                          >Nossas Unidades de Negócios</a
-                        >
-                        <a href="#" class="dropdown-item">Aquisições</a>
-                      </div>
                     </div>
 
                     <div class="menu-items dropdown">
                       <a href="#" class="link-menu-mobile-a dropdown-toggle">
                         <p>Governança Corporativa</p>
                       </a>
-                      <!-- Dropdown individual para mobile -->
-                      <div class="dropdown-menu mobile-dropdown">
-                        <a href="#" class="dropdown-item"
-                          >Composição Acionária</a
-                        >
-                        <a href="#" class="dropdown-item"
-                          >Diretoria, Conselhos e Comitês</a
-                        >
-                        <a href="#" class="dropdown-item"
-                          >Estatuto, Políticas, Códigos e Regimentos</a
-                        >
-                        <a href="#" class="dropdown-item">Formulários CVM</a>
-                        <a href="#" class="dropdown-item"
-                          >Reuniões de Conselho e Assembleias</a
-                        >
-                        <a href="#" class="dropdown-item"
-                          >Comunicação ao Mercado</a
-                        >
-                        <a href="#" class="dropdown-item">ESG</a>
-                        <a href="#" class="dropdown-item"
-                          >Informe de Governança</a
-                        >
-                      </div>
                     </div>
 
                     <div class="menu-items dropdown">
@@ -183,54 +163,14 @@
                       >
                         <p>Informações Financeiras</p>
                       </a>
-                      <!-- Dropdown individual para mobile -->
-                      <div class="dropdown-menu mobile-dropdown">
-                        <a href="#" class="dropdown-item"
-                          >Central de Resultados</a
-                        >
-                        <a href="#" class="dropdown-item">Planilha Dinâmica</a>
-                        <a href="#" class="dropdown-item"
-                          >Cobertura de Analistas</a
-                        >
-                        <a href="#" class="dropdown-item"
-                          >Cotações e Gráficos</a
-                        >
-                        <a href="#" class="dropdown-item">Apresentações</a>
-                      </div>
                     </div>
 
                     <div class="menu-items dropdown">
                       <a href="#" class="link-menu-mobile-a dropdown-toggle">
                         <p>Serviços aos Investidores</p>
                       </a>
-                      <!-- Dropdown individual para mobile -->
-                      <div class="dropdown-menu mobile-dropdown">
-                        <a href="#" class="dropdown-item">Investor Day</a>
-                        <a href="#" class="dropdown-item">Documentos CVM</a>
-                        <a href="#" class="dropdown-item"
-                          >Calendário Corporativo</a
-                        >
-                        <a href="#" class="dropdown-item">Fale com RI</a>
-                        <a href="#" class="dropdown-item">Glossário</a>
-                        <a href="#" class="dropdown-item"
-                          >Perguntas Frequentes</a
-                        >
-                        <a href="#" class="dropdown-item"
-                          >Cadastre-se no Mailing</a
-                        >
-                        <a href="#" class="dropdown-item">Notas Legais</a>
-                        <a
-                          href="https://lwsa.tech/politicas/"
-                          class="dropdown-item"
-                          >Política de Privacidade</a
-                        >
-                        <a href="#" class="dropdown-item"
-                          >Entrevistas e Podcasts</a
-                        >
-                      </div>
                     </div>
 
-                    <!-- Mega-menu unificado para desktop -->
                     <div class="dropdown-menu mega-menu">
                       <div class="mega-menu-column">
                         <a href="#" class="dropdown-item">Histórico</a>
@@ -307,17 +247,6 @@
                           <img src="./images/icon_search.svg" alt="Search" />
                         </a>
                       </div>
-
-                      <!-- Mobile Menu Toggle -->
-                      <button
-                        class="mobile-menu-toggle"
-                        id="mobileMenuToggle"
-                        aria-label="Menu"
-                      >
-                        <span class="hamburger-line"></span>
-                        <span class="hamburger-line"></span>
-                        <span class="hamburger-line"></span>
-                      </button>
                     </div>
                   </div>
                 </nav>
@@ -644,6 +573,183 @@
         </div>
       </div>
     </div>
+
+    <div class="ecossistema-home">
+      <div class="container container-full">
+        <div class="content-ecossistema">
+          <div class="title-ecossistema">
+            <h2>Ecossistema de soluções integradas</h2>
+            <p>
+              Temos o mais completo portfólio de soluções para toda a jornada em
+              qualquer momento do negócio.
+            </p>
+            <a href="#" class="btn-primary">Conheça nosso Ecossistema</a>
+          </div>
+
+          <div class="image-ecossistema">
+            <img src="images/img-ecossistema.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="escolhas-home">
+      <div class="container container-full">
+        <div class="content-escolhas-home">
+          <div class="container-cards">
+            <div class="box-cards">
+              <div class="cards">
+                <p>Diferenciais</p>
+              </div>
+
+              <div class="cards">
+                <p>Ecossistema próprio com experiência e soluções unificadas</p>
+              </div>
+
+              <div class="cards">
+                <p>Parcerias e Integrações</p>
+              </div>
+
+              <div class="cards">
+                <p>Educação, Onboarding e Sucesso do Cliente</p>
+              </div>
+            </div>
+
+            <div class="box-cards">
+              <div class="cards">
+                <p>Nossas Escolhas Fundamentais</p>
+              </div>
+
+              <div class="cards">
+                <p>
+                  Ser um ecossistema digital abrangente para comerciantes
+                  brasileiros
+                </p>
+              </div>
+
+              <div class="cards">
+                <p>
+                  Ser ágil na oferta do melhor produto aos nossos clientes, seja
+                  por meio de desenvolvimento interno ou M&A
+                </p>
+              </div>
+
+              <div class="cards">
+                <p>
+                  Adicionar valor aos nossos clientes por meio de uma plataforma
+                  integrada e fácil de usar que possibilite o crescimento do
+                  cliente
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <a href="#" class="back-to-top" target="_blank">
+      <img src="images/back-to-top.svg" alt="Voltar ao inicio da página" />
+    </a>
+
+    <footer class="footer">
+      <div class="container-first-footer">
+        <div class="container container-full container-first-footer-s">
+          <div class="content-first-footer">
+            <button
+              class="button-mapa-site"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseMapSite"
+              aria-expanded="false"
+              aria-controls="collapseMapSite"
+            >
+              Mapa do site
+            </button>
+
+            <div class="mailing-footer">
+              <a href="#">Cadastre-se no Mailing</a>
+              <a href="">Fale com RI</a>
+              <a href="#">FAQ</a>
+            </div>
+
+            <div class="cotacao-footer">
+              <img src="images/ibrx100b3.png" alt="" />
+              <img src="images/ibrx100b3.png" alt="" />
+              <img src="images/ibrx100b3.png" alt="" />
+              <img src="images/ibrx100b3.png" alt="" />
+              <img src="images/ibrx100b3.png" alt="" />
+              <img src="images/ibrx100b3.png" alt="" />
+              <img src="images/ibrx100b3.png" alt="" />
+              <img src="images/ibrx100b3.png" alt="" />
+              <img src="images/ibrx100b3.png" alt="" />
+            </div>
+          </div>
+
+          <div class="collapse" id="collapseMapSite">
+            <div class="list-menu-footer">
+              <div class="item-menu-footer">
+                <h5>Governança</h5>
+                <a href="#">Composição Acionária</a>
+                <a href="#">Conselho, Diretoria e Comitês</a>
+                <a href="#">Estatuto, Códigos e Políticas</a>
+              </div>
+
+              <div class="item-menu-footer">
+                <h5>Governança</h5>
+                <a href="#">Composição Acionária</a>
+                <a href="#">Conselho, Diretoria e Comitês</a>
+                <a href="#">Estatuto, Códigos e Políticas</a>
+              </div>
+
+              <div class="item-menu-footer">
+                <h5>Governança</h5>
+                <a href="#">Composição Acionária</a>
+                <a href="#">Conselho, Diretoria e Comitês</a>
+                <a href="#">Estatuto, Códigos e Políticas</a>
+              </div>
+
+              <div class="item-menu-footer">
+                <h5>Governança</h5>
+                <a href="#">Composição Acionária</a>
+                <a href="#">Conselho, Diretoria e Comitês</a>
+                <a href="#">Estatuto, Códigos e Políticas</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-second-footer">
+        <div class="container container-full">
+          <div class="content-second-footer">
+            <p>Locaweb (LWSA) © Todos os direitos reservados 2025</p>
+
+            <div class="links-second-footer">
+              <a href="#">Termos e Condições</a>
+              <a href="#">Política de Privacidade</a>
+            </div>
+
+            <div class="social-footer">
+              <a href="#"
+                ><img src="images/icon-instagram.svg" alt="Instagram"
+              /></a>
+              <a href="#"
+                ><img src="images/icon-linkedin.svg" alt="Linkedin"
+              /></a>
+              <a href="#"
+                ><img src="images/icon-youtube.svg" alt="Youtube"
+              /></a>
+            </div>
+
+            <a href="#"
+              ><img
+                src="https://sites.astri.solutions/selo-footer/selo-white.svg"
+                alt="Logo Astri"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 

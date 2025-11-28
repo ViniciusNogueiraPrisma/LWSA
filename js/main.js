@@ -497,7 +497,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (isMobileMode()) {
       dropdownToggles.forEach((toggle) => {
-        const dropdownMenu = toggle.nextElementSibling;
+        const menuItem = toggle.closest(".menu-items");
+        const dropdownMenu = menuItem ? menuItem.querySelector(".dropdown-menu:not(.mega-menu)") : null;
         toggle.setAttribute("aria-expanded", "false");
         if (dropdownMenu) {
           dropdownMenu.classList.remove("mobile-show");
@@ -529,13 +530,17 @@ document.addEventListener("DOMContentLoaded", function () {
         e.preventDefault();
         e.stopPropagation();
 
-        const dropdownMenu = this.nextElementSibling;
+        const menuItem = this.closest(".menu-items");
+        const dropdownMenu = menuItem ? menuItem.querySelector(".dropdown-menu:not(.mega-menu)") : null;
         const isExpanded = this.getAttribute("aria-expanded") === "true";
+
+        if (!dropdownMenu) return;
 
         // Close all other dropdowns (accordion behavior)
         dropdownToggles.forEach((otherToggle) => {
           if (otherToggle !== this) {
-            const otherMenu = otherToggle.nextElementSibling;
+            const otherMenuItem = otherToggle.closest(".menu-items");
+            const otherMenu = otherMenuItem ? otherMenuItem.querySelector(".dropdown-menu:not(.mega-menu)") : null;
             otherToggle.setAttribute("aria-expanded", "false");
             if (otherMenu) {
               otherMenu.classList.remove("mobile-show");
@@ -575,7 +580,8 @@ document.addEventListener("DOMContentLoaded", function () {
     if (window.innerWidth > 1200) {
       closeMobileMenu();
       dropdownToggles.forEach((toggle) => {
-        const dropdownMenu = toggle.nextElementSibling;
+        const menuItem = toggle.closest(".menu-items");
+        const dropdownMenu = menuItem ? menuItem.querySelector(".dropdown-menu:not(.mega-menu)") : null;
         toggle.setAttribute("aria-expanded", "false");
         if (dropdownMenu) {
           dropdownMenu.classList.remove("mobile-show");

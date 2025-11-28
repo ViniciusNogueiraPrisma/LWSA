@@ -60,3 +60,31 @@ var swiper360 = new Swiper(".arena-360-swiper", {
     prevEl: ".arena-360-prev",
   },
 });
+
+var swiperIndices = null;
+
+function initIndicesSwiper() {
+  if (window.innerWidth < 1200) {
+    if (!swiperIndices) {
+      swiperIndices = new Swiper(".indices-swiper", {
+        spaceBetween: 0,
+        slidesPerView: 1,
+        // autoplay: {
+        //   delay: 3000,
+        // },
+        loop: true,
+      });
+    }
+  } else {
+    if (swiperIndices) {
+      swiperIndices.destroy(true, true);
+      swiperIndices = null;
+    }
+  }
+}
+
+initIndicesSwiper();
+
+window.addEventListener("resize", function () {
+  initIndicesSwiper();
+});
