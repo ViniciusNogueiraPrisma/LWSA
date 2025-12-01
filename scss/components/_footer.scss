@@ -1,6 +1,7 @@
 footer {
   padding: 32px 0px;
   background: var(--color-primary);
+  overflow: hidden;
 
   .button-mapa-site {
     padding: 0;
@@ -25,9 +26,10 @@ footer {
     }
   }
 
-  .container-first-footer-s {
-    padding-bottom: 16px;
+  .content-first-footer {
     border-bottom: 1px solid rgba(240, 240, 240, 0.24);
+    padding-bottom: 16px;
+    // padding: 0;
   }
 
   .content-first-footer {
@@ -35,6 +37,12 @@ footer {
     justify-content: space-between;
     align-items: center;
     gap: 16px;
+    flex-wrap: wrap;
+
+    // padding-right: var(--bs-gutter-x, 0.75rem);
+    // padding-left: var(--bs-gutter-x, 0.75rem);
+    // margin-right: auto;
+    // margin-left: auto;
 
     .mailing-footer {
       display: flex;
@@ -68,7 +76,7 @@ footer {
     .cotacao-footer {
       display: flex;
       gap: 8px;
-
+      flex-wrap: wrap;
       img {
         max-width: 60px;
       }
@@ -80,6 +88,16 @@ footer {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 32px;
+
+    @media (max-width: 991px) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+    }
+
+    @media (max-width: 767px) {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 16px;
+    }
 
     .item-menu-footer {
       display: flex;
@@ -118,6 +136,7 @@ footer {
       justify-content: space-between;
       align-items: center;
       gap: 32px;
+      flex-wrap: wrap;
 
       p {
         margin: 0;

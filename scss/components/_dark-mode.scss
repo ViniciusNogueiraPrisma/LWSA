@@ -305,6 +305,88 @@ body.dark-mode {
     }
   }
 
+  .content-n-u {
+    .accordion {
+      .accordion-item {
+        .accordion-header {
+          .accordion-button {
+            // Default state (collapsed) - dark mode
+            &.collapsed {
+              background-color: #292828;
+              color: #ffffff;
+              border-color: transparent;
+
+              &::after {
+                border-top-color: #ffffff;
+              }
+
+              &:hover {
+                background-color: #292828;
+                border: 1px solid #ffffff;
+                color: #ffffff;
+
+                &::after {
+                  border-top-color: #ffffff;
+                }
+              }
+            }
+
+            // Open/Expanded state - dark mode
+            &:not(.collapsed) {
+              background-color: $color-secondary;
+              color: #ffffff;
+
+              &::after {
+                border-top-color: #ffffff;
+              }
+
+              &:hover {
+                background-color: $color-secondary;
+                color: #ffffff;
+
+                &::after {
+                  border-top-color: #ffffff;
+                }
+              }
+            }
+
+            // Disabled state - dark mode
+            &:disabled,
+            &.disabled {
+              background-color: #1d1d1d;
+              color: #6e6e6e;
+
+              &::after {
+                border-top-color: #6e6e6e;
+              }
+
+              &:hover {
+                background-color: #1d1d1d;
+                border: none;
+                color: #6e6e6e;
+
+                &::after {
+                  border-top-color: #6e6e6e;
+                }
+              }
+            }
+          }
+        }
+
+        .accordion-collapse {
+          .accordion-body {
+            background-color: #1d1d1d;
+            color: #ffffff;
+
+            .accordion-text {
+              color: #ffffff;
+            }
+          }
+        }
+      }
+    }
+  }
+
   .content-politicas {
     background-color: #1d1d1d;
   }

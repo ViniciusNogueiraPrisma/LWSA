@@ -1,5 +1,9 @@
 .p-80 {
   padding: 80px 0px;
+
+  @media (max-width: 1199px) {
+    padding: 48px 0px;
+  }
 }
 
 .banner-home {
@@ -41,6 +45,11 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 24px;
+
+    @media (max-width: 1199px) {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 16px;
+    }
 
     .content-main {
       width: 100%;
@@ -129,6 +138,10 @@
           padding-bottom: 8px;
           border-bottom: 1px solid $gray-200;
 
+          display: flex;
+          flex-direction: column;
+          gap: 2px;
+
           span {
             margin: 0;
             color: #7a7a7a;
@@ -139,7 +152,7 @@
             line-height: 24px;
           }
 
-          p {
+          a {
             margin: 0;
             color: #333;
             font-family: var(--font-rf-dewi);
@@ -263,6 +276,11 @@ a.link-ver-todos {
     align-items: center;
     gap: 24px;
 
+    @media (max-width: 1199px) {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 48px;
+    }
+
     h2 {
       color: var(--color-primary);
       font-family: var(--font-rf-dewi);
@@ -295,6 +313,15 @@ a.link-ver-todos {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 24px;
+
+    @media (max-width: 1199px) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+    }
+
+    @media (max-width: 767px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
 
     .card-destaque:nth-child(1) {
       background: var(--color-primary);
@@ -399,8 +426,23 @@ a.link-ver-todos {
     position: relative;
     top: 120px;
 
+    @media (max-width: 1199px) {
+      flex-direction: column;
+      gap: 48px;
+      // top: 0;
+    }
+
     .title-ecossistema {
       width: 369px;
+
+      @media (max-width: 1199px) {
+        text-align: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+      }
 
       h2 {
         margin: 0;
@@ -424,11 +466,23 @@ a.link-ver-todos {
         line-height: 24px;
       }
     }
+
+    .image-ecossistema {
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
   }
 }
 
 .escolhas-home {
   padding-top: 130px;
+
+  @media (max-width: 767px) {
+    width: 100%;
+    height: auto;
+  }
   padding-bottom: 80px;
 
   .content-escolhas-home {
@@ -441,6 +495,11 @@ a.link-ver-todos {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap: 8px;
+
+        @media (max-width: 1199px) {
+          grid-template-columns: repeat(1, 1fr);
+          gap: 16px;
+        }
 
         .cards:nth-child(1) {
           background: #fff;

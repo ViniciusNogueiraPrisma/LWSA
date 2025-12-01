@@ -238,219 +238,219 @@ $(document).ready(function () {
   });
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-  const filterButton = document.querySelector("[data-filter-toggle]");
-  const filterOptions = document.querySelector("[data-filter-options]");
-  const filterItems = document.querySelectorAll("[data-filter-item]");
-  const filterSelects = document.querySelectorAll(".filter-select select");
+// document.addEventListener("DOMContentLoaded", function () {
+//   const filterButton = document.querySelector("[data-filter-toggle]");
+//   const filterOptions = document.querySelector("[data-filter-options]");
+//   const filterItems = document.querySelectorAll("[data-filter-item]");
+//   const filterSelects = document.querySelectorAll(".filter-select select");
 
-  if (!filterButton || !filterOptions) return;
+//   if (!filterButton || !filterOptions) return;
 
-  let isFilterOpen = false;
+//   let isFilterOpen = false;
 
-  function toggleFilters() {
-    isFilterOpen = !isFilterOpen;
+//   function toggleFilters() {
+//     isFilterOpen = !isFilterOpen;
 
-    if (isFilterOpen) {
-      filterButton.classList.add("active");
-      filterOptions.classList.add("show");
+//     if (isFilterOpen) {
+//       filterButton.classList.add("active");
+//       filterOptions.classList.add("show");
 
-      filterItems.forEach((item, index) => {
-        setTimeout(() => {
-          item.classList.add("animate-in");
-        }, 100 + index * 100);
-      });
-    } else {
-      filterButton.classList.remove("active");
+//       filterItems.forEach((item, index) => {
+//         setTimeout(() => {
+//           item.classList.add("animate-in");
+//         }, 100 + index * 100);
+//       });
+//     } else {
+//       filterButton.classList.remove("active");
 
-      filterItems.forEach((item) => {
-        item.classList.remove("animate-in");
-      });
+//       filterItems.forEach((item) => {
+//         item.classList.remove("animate-in");
+//       });
 
-      setTimeout(() => {
-        filterOptions.classList.remove("show");
-      }, 200);
-    }
-  }
+//       setTimeout(() => {
+//         filterOptions.classList.remove("show");
+//       }, 200);
+//     }
+//   }
 
-  filterButton.addEventListener("click", function (e) {
-    e.preventDefault();
-    toggleFilters();
-  });
+//   filterButton.addEventListener("click", function (e) {
+//     e.preventDefault();
+//     toggleFilters();
+//   });
 
-  document.addEventListener("click", function (e) {
-    if (!e.target.closest(".filter-controls") && isFilterOpen) {
-      toggleFilters();
-    }
-  });
+//   document.addEventListener("click", function (e) {
+//     if (!e.target.closest(".filter-controls") && isFilterOpen) {
+//       toggleFilters();
+//     }
+//   });
 
-  function filterContent(filters) {
-    const contentItems = document.querySelectorAll(
-      ".content-item, .document-item"
-    );
+//   function filterContent(filters) {
+//     const contentItems = document.querySelectorAll(
+//       ".content-item, .document-item"
+//     );
 
-    contentItems.forEach((item) => {
-      let shouldShow = true;
+//     contentItems.forEach((item) => {
+//       let shouldShow = true;
 
-      if (filters.ano) {
-        const itemYear =
-          item.getAttribute("data-year") ||
-          item.querySelector("[data-year]")?.getAttribute("data-year");
-        if (itemYear && itemYear !== filters.ano) {
-          shouldShow = false;
-        }
-      }
+//       if (filters.ano) {
+//         const itemYear =
+//           item.getAttribute("data-year") ||
+//           item.querySelector("[data-year]")?.getAttribute("data-year");
+//         if (itemYear && itemYear !== filters.ano) {
+//           shouldShow = false;
+//         }
+//       }
 
-      if (filters.tipo) {
-        const itemType =
-          item.getAttribute("data-type") ||
-          item.querySelector("[data-type]")?.getAttribute("data-type");
-        if (itemType && itemType !== filters.tipo) {
-          shouldShow = false;
-        }
-      }
+//       if (filters.tipo) {
+//         const itemType =
+//           item.getAttribute("data-type") ||
+//           item.querySelector("[data-type]")?.getAttribute("data-type");
+//         if (itemType && itemType !== filters.tipo) {
+//           shouldShow = false;
+//         }
+//       }
 
-      if (filters.data) {
-        // Implementação futura para filtro de data
-      }
+//       if (filters.data) {
+//         // Implementação futura para filtro de data
+//       }
 
-      if (shouldShow) {
-        item.style.display = "";
-        item.style.opacity = "1";
-        item.style.transform = "translateY(0)";
-      } else {
-        item.style.opacity = "0";
-        item.style.transform = "translateY(-10px)";
-        setTimeout(() => {
-          if (item.style.opacity === "0") {
-            item.style.display = "none";
-          }
-        }, 300);
-      }
-    });
-  }
+//       if (shouldShow) {
+//         item.style.display = "";
+//         item.style.opacity = "1";
+//         item.style.transform = "translateY(0)";
+//       } else {
+//         item.style.opacity = "0";
+//         item.style.transform = "translateY(-10px)";
+//         setTimeout(() => {
+//           if (item.style.opacity === "0") {
+//             item.style.display = "none";
+//           }
+//         }, 300);
+//       }
+//     });
+//   }
 
-  function applyFilters() {
-    const filters = {};
-    filterSelects.forEach((select) => {
-      if (select.value) {
-        filters[select.name] = select.value;
-      }
-    });
-    filterContent(filters);
-  }
+//   function applyFilters() {
+//     const filters = {};
+//     filterSelects.forEach((select) => {
+//       if (select.value) {
+//         filters[select.name] = select.value;
+//       }
+//     });
+//     filterContent(filters);
+//   }
 
-  filterSelects.forEach((select) => {
-    select.addEventListener("change", function () {
-      if (this.value) {
-        this.style.color = "#3b3b3b";
-        this.style.fontWeight = "500";
-      } else {
-        this.style.color = "#6e6e6e";
-        this.style.fontWeight = "400";
-      }
+//   filterSelects.forEach((select) => {
+//     select.addEventListener("change", function () {
+//       if (this.value) {
+//         this.style.color = "#3b3b3b";
+//         this.style.fontWeight = "500";
+//       } else {
+//         this.style.color = "#6e6e6e";
+//         this.style.fontWeight = "400";
+//       }
 
-      applyFilters();
-    });
+//       applyFilters();
+//     });
 
-    select.addEventListener("focus", function () {
-      const svg = this.parentElement.querySelector("svg");
-      if (svg) {
-        svg.style.color = "#ea7425";
-      }
-    });
+//     select.addEventListener("focus", function () {
+//       const svg = this.parentElement.querySelector("svg");
+//       if (svg) {
+//         svg.style.color = "#ea7425";
+//       }
+//     });
 
-    select.addEventListener("blur", function () {
-      const svg = this.parentElement.querySelector("svg");
-      if (svg) {
-        svg.style.color = "#6e6e6e";
-      }
-    });
-  });
+//     select.addEventListener("blur", function () {
+//       const svg = this.parentElement.querySelector("svg");
+//       if (svg) {
+//         svg.style.color = "#6e6e6e";
+//       }
+//     });
+//   });
 
-  function clearAllFilters() {
-    filterSelects.forEach((select) => {
-      select.value = "";
-      select.style.color = "#6e6e6e";
-      select.style.fontWeight = "400";
-    });
+//   function clearAllFilters() {
+//     filterSelects.forEach((select) => {
+//       select.value = "";
+//       select.style.color = "#6e6e6e";
+//       select.style.fontWeight = "400";
+//     });
 
-    const contentItems = document.querySelectorAll(
-      ".content-item, .document-item"
-    );
-    contentItems.forEach((item) => {
-      item.style.display = "";
-      item.style.opacity = "1";
-      item.style.transform = "translateY(0)";
-    });
+//     const contentItems = document.querySelectorAll(
+//       ".content-item, .document-item"
+//     );
+//     contentItems.forEach((item) => {
+//       item.style.display = "";
+//       item.style.opacity = "1";
+//       item.style.transform = "translateY(0)";
+//     });
 
-    if (isFilterOpen) {
-      toggleFilters();
-    }
-  }
+//     if (isFilterOpen) {
+//       toggleFilters();
+//     }
+//   }
 
-  document.addEventListener("keydown", function (e) {
-    if (e.key === "Escape") {
-      if (isFilterOpen) {
-        toggleFilters();
-      } else {
-        clearAllFilters();
-      }
-    }
-  });
+//   document.addEventListener("keydown", function (e) {
+//     if (e.key === "Escape") {
+//       if (isFilterOpen) {
+//         toggleFilters();
+//       } else {
+//         clearAllFilters();
+//       }
+//     }
+//   });
 
-  function initializeFiltersFromURL() {
-    const urlParams = new URLSearchParams(window.location.search);
-    let hasFilters = false;
+//   function initializeFiltersFromURL() {
+//     const urlParams = new URLSearchParams(window.location.search);
+//     let hasFilters = false;
 
-    filterSelects.forEach((select) => {
-      const paramValue = urlParams.get(select.name);
-      if (paramValue) {
-        select.value = paramValue;
-        select.style.color = "#3b3b3b";
-        select.style.fontWeight = "500";
-        hasFilters = true;
-      }
-    });
+//     filterSelects.forEach((select) => {
+//       const paramValue = urlParams.get(select.name);
+//       if (paramValue) {
+//         select.value = paramValue;
+//         select.style.color = "#3b3b3b";
+//         select.style.fontWeight = "500";
+//         hasFilters = true;
+//       }
+//     });
 
-    if (hasFilters && !isFilterOpen) {
-      setTimeout(() => {
-        toggleFilters();
-      }, 500);
-    }
+//     if (hasFilters && !isFilterOpen) {
+//       setTimeout(() => {
+//         toggleFilters();
+//       }, 500);
+//     }
 
-    if (urlParams.toString()) {
-      applyFilters();
-    }
-  }
+//     if (urlParams.toString()) {
+//       applyFilters();
+//     }
+//   }
 
-  initializeFiltersFromURL();
+//   initializeFiltersFromURL();
 
-  function updateFilterButton() {
-    if (!filterButton) return;
+//   function updateFilterButton() {
+//     if (!filterButton) return;
 
-    const activeFilters = Array.from(filterSelects).filter(
-      (select) => select.value
-    );
+//     const activeFilters = Array.from(filterSelects).filter(
+//       (select) => select.value
+//     );
 
-    if (activeFilters.length > 0) {
-      filterButton.classList.add("has-active-filters");
-      filterButton.style.position = "relative";
-    } else {
-      filterButton.classList.remove("has-active-filters");
-      const badge = filterButton.querySelector(".filter-badge");
-      if (badge) {
-        badge.remove();
-      }
-    }
-  }
+//     if (activeFilters.length > 0) {
+//       filterButton.classList.add("has-active-filters");
+//       filterButton.style.position = "relative";
+//     } else {
+//       filterButton.classList.remove("has-active-filters");
+//       const badge = filterButton.querySelector(".filter-badge");
+//       if (badge) {
+//         badge.remove();
+//       }
+//     }
+//   }
 
-  filterSelects.forEach((select) => {
-    select.addEventListener("change", updateFilterButton);
-  });
+//   filterSelects.forEach((select) => {
+//     select.addEventListener("change", updateFilterButton);
+//   });
 
-  updateFilterButton();
-});
+//   updateFilterButton();
+// });
 
 document.addEventListener("DOMContentLoaded", function () {
   const mobileMenuToggle = document.getElementById("mobileMenuToggle");
@@ -458,7 +458,26 @@ document.addEventListener("DOMContentLoaded", function () {
   const dropdownToggles = document.querySelectorAll(".dropdown-toggle");
   const dropdownMenus = document.querySelectorAll(".dropdown-menu");
   const dropdownItems = document.querySelectorAll(".dropdown-item");
+  const navigationPages = document.querySelector(".navigation-pages");
+  const megaMenu = document.querySelector(".mega-menu");
+  const megaMenuOriginalParent = megaMenu ? megaMenu.parentElement : null;
+  const megaMenuNextSibling = megaMenu ? megaMenu.nextElementSibling : null;
+  const dropdowns = document.querySelectorAll(".navigation-pages .dropdown");
   const body = document.body;
+
+  function setMegaMenuSectionByDropdown(dropdownElement) {
+    // Só segmenta colunas no modo mobile/tablet
+    if (!megaMenu || !isMobileMode()) return;
+
+    const allDropdowns = Array.from(dropdowns);
+    const index = allDropdowns.indexOf(dropdownElement);
+    if (index === -1) return;
+
+    const columns = megaMenu.querySelectorAll(".mega-menu-column");
+    columns.forEach((col, i) => {
+      col.style.display = i === index ? "flex" : "none";
+    });
+  }
 
   function isMobileMode() {
     return window.innerWidth <= 1200;
@@ -498,7 +517,9 @@ document.addEventListener("DOMContentLoaded", function () {
     if (isMobileMode()) {
       dropdownToggles.forEach((toggle) => {
         const menuItem = toggle.closest(".menu-items");
-        const dropdownMenu = menuItem ? menuItem.querySelector(".dropdown-menu:not(.mega-menu)") : null;
+        const dropdownMenu = menuItem
+          ? menuItem.querySelector(".dropdown-menu:not(.mega-menu)")
+          : null;
         toggle.setAttribute("aria-expanded", "false");
         if (dropdownMenu) {
           dropdownMenu.classList.remove("mobile-show");
@@ -531,7 +552,20 @@ document.addEventListener("DOMContentLoaded", function () {
         e.stopPropagation();
 
         const menuItem = this.closest(".menu-items");
-        const dropdownMenu = menuItem ? menuItem.querySelector(".dropdown-menu:not(.mega-menu)") : null;
+        let dropdownMenu = null;
+
+        // No mobile usamos o mega menu único como conteúdo dos accordions
+        if (megaMenu && navigationPages && menuItem) {
+          // Garante que o megaMenu fique imediatamente abaixo do item clicado
+          navigationPages.insertBefore(megaMenu, menuItem.nextElementSibling);
+          // Mostra apenas a coluna correspondente a este item
+          const dropdownWrapper = menuItem; // menuItems já possui a classe .dropdown
+          setMegaMenuSectionByDropdown(dropdownWrapper);
+          dropdownMenu = megaMenu;
+        } else if (menuItem) {
+          dropdownMenu = menuItem.querySelector(".dropdown-menu:not(.mega-menu)");
+        }
+
         const isExpanded = this.getAttribute("aria-expanded") === "true";
 
         if (!dropdownMenu) return;
@@ -540,7 +574,11 @@ document.addEventListener("DOMContentLoaded", function () {
         dropdownToggles.forEach((otherToggle) => {
           if (otherToggle !== this) {
             const otherMenuItem = otherToggle.closest(".menu-items");
-            const otherMenu = otherMenuItem ? otherMenuItem.querySelector(".dropdown-menu:not(.mega-menu)") : null;
+            const otherMenu =
+              otherMenuItem &&
+              (megaMenu
+                ? megaMenu
+                : otherMenuItem.querySelector(".dropdown-menu:not(.mega-menu)"));
             otherToggle.setAttribute("aria-expanded", "false");
             if (otherMenu) {
               otherMenu.classList.remove("mobile-show");
@@ -581,18 +619,34 @@ document.addEventListener("DOMContentLoaded", function () {
       closeMobileMenu();
       dropdownToggles.forEach((toggle) => {
         const menuItem = toggle.closest(".menu-items");
-        const dropdownMenu = menuItem ? menuItem.querySelector(".dropdown-menu:not(.mega-menu)") : null;
+        const dropdownMenu = menuItem
+          ? menuItem.querySelector(".dropdown-menu:not(.mega-menu)")
+          : null;
         toggle.setAttribute("aria-expanded", "false");
         if (dropdownMenu) {
           dropdownMenu.classList.remove("mobile-show");
         }
       });
+
+      // Restaura todas as colunas do mega menu no desktop
+      if (megaMenu) {
+        const columns = megaMenu.querySelectorAll(".mega-menu-column");
+        columns.forEach((col) => {
+          col.style.display = "";
+        });
+      }
+
+      // Restaura o mega menu para a posição original no desktop
+      if (megaMenu && megaMenuOriginalParent) {
+        if (megaMenuNextSibling) {
+          megaMenuOriginalParent.insertBefore(megaMenu, megaMenuNextSibling);
+        } else {
+          megaMenuOriginalParent.appendChild(megaMenu);
+        }
+        megaMenu.classList.remove("mobile-show");
+      }
     }
   });
-
-  const navigationPages = document.querySelector(".navigation-pages");
-  const megaMenu = document.querySelector(".mega-menu");
-  const dropdowns = document.querySelectorAll(".navigation-pages .dropdown");
 
   if (navigationPages && megaMenu && dropdowns.length > 0) {
     let megaMenuInitialized = false;
@@ -618,7 +672,10 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         dropdowns.forEach((dropdown) => {
-          dropdown.addEventListener("mouseenter", showMegaMenu);
+          dropdown.addEventListener("mouseenter", function () {
+            setMegaMenuSectionByDropdown(dropdown);
+            showMegaMenu();
+          });
           dropdown.addEventListener("mouseleave", function (e) {
             if (!megaMenu.contains(e.relatedTarget)) {
               setTimeout(() => {
