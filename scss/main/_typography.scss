@@ -1,4 +1,4 @@
-$font-family-base: "Montserrat", sans-serif;
+$font-family-base: "RF Dewi", sans-serif;
 
 @function rem($pixels, $base: 16) {
   @return #{$pixels / $base}rem;
@@ -53,17 +53,17 @@ h6 {
 }
 
 h3 {
-  color: #022715;
-  font-family: Montserrat;
+  color: var(--color-primary);
+  font-family: var(--font-rf-dewi);
   font-size: 28px;
   font-style: normal;
   font-weight: 400;
-  line-height: 36px;
+  line-height: 32px;
 }
 
 h4 {
-  color: #4c685b;
-  font-family: Montserrat;
+  color: var(--color-primary);
+  font-family: var(--font-rf-dewi);
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
