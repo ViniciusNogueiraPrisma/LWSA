@@ -344,7 +344,6 @@
         </a>
       </div>
     </div>
-
     <div class="header-internal">
       <div class="img-header">
         <img
@@ -356,74 +355,89 @@
       <div class="container container-full">
         <div class="main-content-header-internal">
           <div class="title-internal">
-            <h1>Informe de Governança</h1>
+            <h1>Cadastre-se no Mailing</h1>
           </div>
           <div class="breadcrumb">
             <a href="Default.aspx"> Home </a
-            ><a href=""> Informe de Governança </a>
+            ><a href=""> Cadastre-se no Mailing </a>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="content-aquisicoes p-80">
+    <div class="cc-mailing p-80">
       <div class="container container-full">
-        <div class="filter">
-          <div class="filter-controls">
-            <div class="filter-options" data-filter-options="">
-              <div class="filter-select" data-filter-item="">
-                <select class="form-select" name="ano">
-                  <option value="">Ano</option>
-                  <option value="2025">2025</option>
-                  <option value="2024">2024</option>
-                  <option value="2023">2023</option>
-                  <option value="2022">2022</option>
-                  <option value="2021">2021</option>
-                  <option value="2020">2020</option>
-                  <option value="2019">2019</option>
-                  <option value="2018">2018</option>
-                  <option value="2016">2016</option>
-                  <option value="2015">2015</option>
-                </select>
-              </div>
-            </div>
+        <div class="content-fale-conosco">
+          <div class="text-fale-com-ri">
+            <h2>Cadastre-se no Mailing</h2>
+            <p>
+              Preencha os campos abaixo. Caso você já seja cadastrado, clique
+              aqui.
+            </p>
           </div>
-        </div>
 
-        <div class="accordion" id="accordionAqui">
-          <div class="accordion-item" data-aos="fade-up" data-aos-delay="200">
-            <h2 class="accordion-header">
-              <a
-                class="accordion-button collapsed"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseSintese"
-                aria-expanded="false"
-                aria-controls="collapseSintese"
-                >Informe de Governança Corporativa</a
-              >
-            </h2>
-            <div
-              id="collapseSintese"
-              class="accordion-collapse collapse"
-              data-bs-parent="#accordionAqui"
-            >
-              <div class="accordion-body">
-                <div class="item-list">
-                  <div class="date-list">
-                    <p>00/00/00</p>
-                  </div>
-
-                  <div class="link-list">
-                    <a href="#">
-                      <img src="images/icon-pdf-secondary.svg" alt="" />
-
-                      Comunicado ao Mercado - Aquisição Síntese Soluções
-                    </a>
-                  </div>
-                </div>
-              </div>
+          <form id="contactForm" data-aos="fade-up" data-aos-delay="100">
+            <div class="form-group">
+              <label class="form-label">
+                <span>Nome</span>
+                <span class="form-required">*</span>
+              </label>
+              <input
+                type="text"
+                class="form-input"
+                placeholder="Digite seu nome completo"
+                name="nome"
+                required
+              />
             </div>
-          </div>
+
+            <div class="form-group">
+              <label class="form-label">
+                <span>E-mail</span>
+                <span class="form-required">*</span>
+              </label>
+              <input
+                type="email"
+                class="form-input"
+                placeholder="nome@email.com"
+                name="email"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">
+                <span>Empresa</span>
+                <span class="form-required">*</span>
+              </label>
+              <input
+                type="tel"
+                class="form-input"
+                placeholder="Nome da empresa"
+                name="empresa"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">
+                <span>Acionista</span>
+                <span class="form-required">*</span>
+              </label>
+              <select name="" id="">
+                <option value="">Lorem ipsum dolor amen</option>
+              </select>
+            </div>
+
+            <div class="form-checkbox">
+              <input type="checkbox" required />
+              <p>Li e concordo com a Política de Privacidade.</p>
+            </div>
+
+            <div class="form-buttons">
+              <button type="submit" class="btn-primary">Enviar</button>
+            </div>
+          </form>
         </div>
       </div>
     </div>

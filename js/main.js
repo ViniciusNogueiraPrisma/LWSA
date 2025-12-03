@@ -581,7 +581,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 : otherMenuItem.querySelector(".dropdown-menu:not(.mega-menu)"));
             otherToggle.setAttribute("aria-expanded", "false");
             if (otherMenu) {
-              otherMenu.classList.remove("mobile-show");
+              otherMenu.classList.remove("mobile-show", "show");
             }
           }
         });
@@ -589,10 +589,10 @@ document.addEventListener("DOMContentLoaded", function () {
         // Toggle current dropdown
         if (isExpanded) {
           this.setAttribute("aria-expanded", "false");
-          dropdownMenu.classList.remove("mobile-show");
+          dropdownMenu.classList.remove("mobile-show", "show");
         } else {
           this.setAttribute("aria-expanded", "true");
-          dropdownMenu.classList.add("mobile-show");
+          dropdownMenu.classList.add("mobile-show", "show");
         }
       }
     });

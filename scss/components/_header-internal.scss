@@ -7,6 +7,10 @@
     position: relative;
     z-index: 1;
 
+    @media (max-width: 991px) {
+      height: 400px;
+    }
+
     &:before {
       content: "";
       position: absolute;
@@ -22,14 +26,6 @@
       background-blend-mode: multiply;
     }
 
-    @media (max-width: 991px) {
-      height: 400px;
-    }
-
-    @media (max-width: 767px) {
-      height: 450px;
-    }
-
     img {
       object-fit: cover;
       width: 100%;
@@ -42,7 +38,7 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    gap: 24px;
+    gap: 42px;
     padding-bottom: 48px;
 
     margin: 0 auto;
@@ -59,6 +55,26 @@
     padding-left: var(--bs-gutter-x, 0.75rem);
     margin-right: auto;
     margin-left: auto;
+
+    @media (max-width: 1199.98px) {
+      max-width: 960px;
+    }
+
+    @media (max-width: 991px) {
+      max-width: 720px;
+    }
+
+    @media (max-width: 767.98px) {
+      max-width: 540px;
+
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-end;
+    }
+
+    @media (max-width: 576px) {
+      max-width: 100%;
+    }
 
     .title-internal {
       h1 {

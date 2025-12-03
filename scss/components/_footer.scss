@@ -19,10 +19,20 @@ footer {
     font-weight: 700;
     line-height: 124%;
 
+    &[aria-expanded="true"] {
+      &:after {
+        content: url("../../images/icon-map-open.svg");
+        transition: all 0.3s ease;
+        display: flex;
+        position: relative;
+      }
+    }
+
     &:after {
+      transition: all 0.3s ease;
       display: flex;
-      content: url("../../images/icon-map-site.svg");
       position: relative;
+      content: url("../../images/icon-map-site.svg");
     }
   }
 
