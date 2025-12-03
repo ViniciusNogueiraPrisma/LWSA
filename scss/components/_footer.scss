@@ -39,10 +39,9 @@ footer {
     gap: 16px;
     flex-wrap: wrap;
 
-    // padding-right: var(--bs-gutter-x, 0.75rem);
-    // padding-left: var(--bs-gutter-x, 0.75rem);
-    // margin-right: auto;
-    // margin-left: auto;
+    @media (max-width: 991px) {
+      gap: 40px;
+    }
 
     .mailing-footer {
       display: flex;
@@ -137,6 +136,12 @@ footer {
       align-items: center;
       gap: 32px;
       flex-wrap: wrap;
+
+      @media (max-width: 991px) {
+        flex-direction: column;
+        gap: 16px;
+        align-items: flex-start;
+      }
 
       p {
         margin: 0;
