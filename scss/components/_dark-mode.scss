@@ -3,7 +3,8 @@ body.dark-mode {
   color: #e0e0e0;
   transition: background-color 0.3s ease, color 0.3s ease;
 
-  --primary-color: #1d1d1d;
+  --color-primary: #1d1d1d;
+  --color-secondary: #fff;
 
   header.show-header .content-header .navigation a p {
     color: #fff !important;
@@ -26,7 +27,7 @@ body.dark-mode {
   }
 
   header .content-header .navigation .dropdown-item::after {
-    background-color: #1d1d1d;
+    background-color: #fff;
   }
 
   header .search-bar a {
@@ -305,82 +306,86 @@ body.dark-mode {
     }
   }
 
-  .content-n-u {
-    .accordion {
-      .accordion-item {
-        .accordion-header {
-          .accordion-button {
-            // Default state (collapsed) - dark mode
-            &.collapsed {
+  .accordion {
+    .accordion-item {
+      .accordion-header {
+        .accordion-button {
+          &.collapsed {
+            background-color: #292828;
+            color: #ffffff;
+            border-color: transparent;
+
+            &::after {
+              border-top-color: #ffffff;
+            }
+
+            &:hover {
               background-color: #292828;
-              color: #ffffff;
-              border-color: transparent;
-
-              &::after {
-                border-top-color: #ffffff;
-              }
-
-              &:hover {
-                background-color: #292828;
-                border: 1px solid #ffffff;
-                color: #ffffff;
-
-                &::after {
-                  border-top-color: #ffffff;
-                }
-              }
-            }
-
-            // Open/Expanded state - dark mode
-            &:not(.collapsed) {
-              background-color: $color-secondary;
+              border: 1px solid #ffffff;
               color: #ffffff;
 
               &::after {
                 border-top-color: #ffffff;
               }
+            }
+          }
 
-              &:hover {
-                background-color: $color-secondary;
-                color: #ffffff;
+          &:not(.collapsed) {
+            background-color: #6e6e6e;
+            color: #ffffff;
 
-                &::after {
-                  border-top-color: #ffffff;
-                }
-              }
+            &::after {
+              border-top-color: #ffffff;
             }
 
-            // Disabled state - dark mode
-            &:disabled,
-            &.disabled {
+            &:hover {
+              background-color: #6e6e6e;
+              color: #ffffff;
+
+              &::after {
+                border-top-color: #ffffff;
+              }
+            }
+          }
+
+          // Disabled state - dark mode
+          &:disabled,
+          &.disabled {
+            background-color: #1d1d1d;
+            color: #6e6e6e;
+
+            &::after {
+              border-top-color: #6e6e6e;
+            }
+
+            &:hover {
               background-color: #1d1d1d;
+              border: none;
               color: #6e6e6e;
 
               &::after {
                 border-top-color: #6e6e6e;
               }
-
-              &:hover {
-                background-color: #1d1d1d;
-                border: none;
-                color: #6e6e6e;
-
-                &::after {
-                  border-top-color: #6e6e6e;
-                }
-              }
             }
           }
         }
+      }
 
-        .accordion-collapse {
-          .accordion-body {
-            background-color: #1d1d1d;
+      .item-list .date-list p {
+        color: #1d1d1d !important;
+      }
+
+      .accordion-collapse {
+        .accordion-body {
+          background-color: #292828;
+          color: #ffffff;
+
+          p {
+            color: #fff;
+          }
+
+          .accordion-text {
             color: #ffffff;
-
-            .accordion-text {
-              color: #ffffff;
-            }
           }
         }
       }
@@ -440,6 +445,329 @@ body.dark-mode {
   }
 
   .content-equipe .cards-equipe .cards p {
+    color: #fff;
+  }
+
+  header .content-header .navigation .dropdown-menu.mega-menu {
+    background-color: #1d1d1d;
+  }
+
+  header .content-header .navigation .dropdown-item {
+    color: #fff;
+  }
+
+  .apresentacao-home .content-apresentacao h2 {
+    color: #fff;
+
+    b {
+      color: #fff;
+    }
+  }
+
+  .destaques-home {
+    background-color: #1d1d1d;
+  }
+
+  .destaques-home .content-destaques .card-destaque:nth-child(1) {
+    border: 1px solid #323131;
+  }
+
+  .destaques-home .content-destaques .card-destaque {
+    background-color: #323131;
+    // border: #1d1d1d;
+  }
+
+  .destaques-home .content-destaques .card-destaque .infos-card h3 {
+    color: #fff;
+  }
+
+  .destaques-home .content-destaques .card-destaque .infos-card p {
+    color: #fff;
+  }
+
+  .destaques-home .content-destaques .card-destaque .infos-card span {
+    color: #fff;
+  }
+
+  .destaques-home .content-destaques .card-destaque .icon-card img {
+    filter: grayscale(1) brightness(16.5);
+  }
+
+  .destaques-home .content-destaques .card-destaque h2 {
+    color: #fff;
+  }
+
+  .destaques-home .content-destaques .card-destaque:nth-child(1) .d-flex p {
+    color: #fff;
+  }
+
+  .central-home .content-central-home .cards-central {
+    background-color: #323131;
+    border: 1px solid transparent;
+  }
+
+  .central-home .content-central-home .title-central h3 {
+    color: #fff;
+  }
+
+  .central-home
+    .content-central-home
+    .content-central-resultados
+    h3.title-resultados {
+    color: #fff;
+  }
+
+  .central-home
+    .content-central-home
+    .content-central-resultados
+    .list-central-resultados
+    .item-resultado
+    p {
+    color: #fff;
+  }
+
+  a.link-ver-todos {
+    color: #fff;
+  }
+
+  .central-home
+    .content-central-home
+    .content-central-resultados
+    .list-central-resultados
+    .item-resultado {
+    img {
+      filter: grayscale(1) brightness(20);
+    }
+  }
+
+  .central-home .content-central-home .central-atts .list-atts .item-att span {
+    color: #fff;
+  }
+
+  .central-home .content-central-home .central-atts .list-atts .item-att a {
+    color: #fff;
+  }
+
+  .central-home
+    .content-central-home
+    .central-eventos
+    .list-events
+    .item-events
+    .date
+    p {
+    color: #fff;
+  }
+
+  .btn-primary:hover {
+    background-color: #dcdcdc !important;
+  }
+
+  .escolhas-home .content-escolhas-home .container-cards .box-cards .cards {
+    background-color: #323131;
+  }
+
+  .escolhas-home
+    .content-escolhas-home
+    .container-cards
+    .box-cards
+    .cards:nth-child(1)
+    p {
+    color: #fff;
+  }
+
+  .header-internal .img-header:before {
+    background: linear-gradient(
+      0deg,
+      #151515 9.11%,
+      rgba(1, 19, 49, 0.24) 100%
+    );
+  }
+
+  .content-historico .title-historico h2 {
+    color: #fff;
+  }
+
+  .content-historico .title-historico p {
+    color: #fff;
+  }
+
+  .timeline .timeline-item .content-timeline p {
+    color: #fff;
+  }
+
+  h2 {
+    color: #fff;
+  }
+
+  h3 {
+    color: #fff;
+  }
+
+  .content-nosso-ecossistema .title-n-e h2 {
+    color: #fff;
+  }
+
+  .content-nosso-ecossistema .title-n-e p {
+    color: #fff;
+  }
+
+  .slide-navtabs-lwsa .slide-navtabs-item.is-active {
+    background-color: #323131;
+    color: #fff;
+  }
+
+  .slide-navtabs-lwsa .slide-navtabs-panel-intro p {
+    color: #fff;
+  }
+
+  .slide-navtabs-lwsa .slide-navtabs-panel-text p {
+    color: #fff;
+  }
+
+  .slide-navtabs-lwsa .slide-navtabs-panel-text h3 {
+    color: #fff;
+  }
+
+  .slide-navtabs-lwsa .slide-navtabs-panel-box {
+    border: 1px solid #151515;
+  }
+
+  footer .container-second-footer .content-second-footer div.social-footer {
+    filter: grayscale(1);
+  }
+
+  .accordion .accordion-item .accordion-header .accordion-button::after {
+    filter: grayscale(1) brightness(15.5);
+  }
+
+  .filter .filter-controls .filter-options .filter-select select {
+    background-color: #6e6e6e;
+    border: 1px solid #6e6e6e;
+  }
+
+  .header-internal .img-header img {
+    filter: grayscale(1) brightness(0.5);
+  }
+
+  thead tr th {
+    background-color: #6e6e6e;
+  }
+
+  .table-note {
+    color: #fff;
+  }
+
+  tbody tr td {
+    color: #151515;
+  }
+
+  .link-list img {
+    filter: grayscale(1) brightness(0.5);
+  }
+
+  .content-estatutos .cards-estatutos h2 {
+    background-color: #323131;
+    border: #323131;
+  }
+
+  .content-esg .content-texts h2 {
+    color: #fff;
+  }
+
+  .content-esg .content-texts p {
+    color: #fff;
+  }
+
+  .content-esg ul li {
+    color: #fff;
+  }
+
+  .table-central table tbody tr td a img {
+    filter: grayscale(1) brightness(0.5);
+  }
+
+  .container-eventos .title-proximos-eventos {
+    color: #fff;
+  }
+
+  .container-eventos .ui-datepicker-header .ui-datepicker-title span {
+    color: #fff;
+  }
+
+  .container-eventos .ui-datepicker-header .ui-corner-all .ui-icon::after {
+    filter: grayscale(1) brightness(21.5);
+  }
+
+  .container-eventos .legendas-calendario span {
+    color: #fff;
+  }
+
+  .list-calendar-items .list-calendar {
+    background-color: #323131;
+    border: 1px solid #323131;
+  }
+
+  .list-calendar-items .list-calendar .date-calendar span {
+    color: #fff;
+  }
+
+  .list-calendar-items .list-calendar .title-list h3 {
+    color: #fff;
+  }
+
+  .container-eventos .ui-datepicker-calendar tbody td {
+    background-color: #323131;
+    border-color: #4e4d4d !important;
+
+    a {
+      color: #fff !important;
+    }
+  }
+
+  .container-eventos .ui-datepicker-calendar thead th {
+    background-color: #323131;
+    border-color: #4e4d4d !important;
+
+    span {
+      color: #fff !important;
+    }
+  }
+
+  .text-fale-com-ri p {
+    color: #fff;
+  }
+
+  .btn-clear {
+    color: #fff;
+    border: 1px solid #fff;
+  }
+
+  .content-glossario .nav-draggable .nav-glossario li button {
+    color: #fff;
+  }
+
+  .form-checkbox p {
+    color: #fff;
+  }
+
+  .content-n-l p {
+    color: #fff;
+  }
+
+  .content-n-l ul li {
+    color: #fff;
+  }
+
+  .content-n-l ul li::before {
+    filter: grayscale(1) brightness(21.5);
+  }
+
+  .content-e-p .cc-cards .cards {
+    background-color: #323131;
+    border: 1px solid #292828;
+  }
+
+  .content-e-p .cc-cards .cards .infos-card a {
     color: #fff;
   }
 }

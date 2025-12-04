@@ -332,7 +332,7 @@ a.link-ver-todos {
       grid-template-columns: repeat(1, 1fr);
     }
 
-    .card-destaque:nth-child(1) {
+    .card-destaque.first-card-destaque {
       background: var(--color-primary);
       justify-content: center;
 
@@ -353,7 +353,7 @@ a.link-ver-todos {
       border-radius: 8px;
       background: #fff;
       padding: 32px;
-
+      height: 100%;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -367,7 +367,7 @@ a.link-ver-todos {
         .icon-card {
           img {
             transform: translateY(20px);
-            // filter: grayscale(1) invert(1) brightness(10);
+            // filter: sepia(0) brightness(2.5) hue-rotate(339deg);
           }
         }
 
@@ -430,6 +430,7 @@ a.link-ver-todos {
 
         p {
           margin: 0;
+          margin-bottom: 4px;
           transition: all 0.4s ease;
           color: #333;
           font-family: var(--font-rf-dewi);
@@ -467,6 +468,8 @@ a.link-ver-todos {
     align-items: center;
     position: relative;
     top: 120px;
+
+    overflow: hidden;
 
     @media (max-width: 1199px) {
       flex-direction: column;
