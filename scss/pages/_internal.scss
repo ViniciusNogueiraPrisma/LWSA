@@ -489,7 +489,7 @@
     object-fit: cover;
 
     @media (max-width: 991px) {
-      width: 100%;
+      width: 364px;
     }
   }
 }
@@ -668,7 +668,7 @@
       object-fit: contain;
 
       @media (max-width: 1200px) {
-        height: 220px;
+        height: 180px;
       }
     }
   }
@@ -1276,7 +1276,7 @@ tbody {
 
 .content-apresentacoes {
   .accordion-item {
-    margin-bottom: 72px;
+    // margin-bottom: 72px;
   }
 }
 
