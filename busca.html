@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html class="no-js" lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LWSA RI</title>
+    <meta name="description" content="" />
+    <meta property="og:title" content="LWSA RI" />
+    <meta property="og:description" content="" />
+    <meta property="og:image" content="./images/thumb-client.jpg" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="627" />
+    <link rel="shortcut icon" href="./images/favicon.png" sizes="60x60" />
+
+    <!-- CSS Libraries -->
+    <link rel="stylesheet" href="css/import.dist.min.css" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div id="searchBox">
+      <div class="container container-full">
+        <div class="wrapper">
+          <div class="input-group">
+            <input
+              type="text"
+              class="form-control inputBusca"
+              placeholder="Digite aqui a sua busca"
+            />
+
+            <div class="input-group-append">
+              <button
+                type="button"
+                class="input-group-text close-search-box"
+                role="button"
+              >
+                <img
+                  src="./images/icon-close.svg"
+                  alt="Close"
+                  title="Fechar Caixa de Pesquisa"
+                />
+              </button>
+            </div>
+          </div>
+
+          <div class="search-help">
+            <small> Aperte Enter para pesquisar </small>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="main-header">
+      <div class="container container-full">
+        <header class="header">
+          <div class="container container-full">
+            <div class="content-header">
+              <div class="content-left">
+                <div class="logo">
+                  <a href="/" aria-label="">
+                    <img
+                      class="logo-base"
+                      src="images/logo-client.svg"
+                      alt="Logotipo"
+                    />
+                  </a>
+
+                  <p class="logo-text">
+                    Relações <br />
+                    com Investidores
+                  </p>
+                </div>
+
+                <div class="trade-menu">
+                  <div class="swiper indices-swiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide indice-item">
+                        <p>LWSA3</p>
+                        <span>R$ 4,08</span>
+                        <span>-1,69%</span>
+                      </div>
+
+                      <div class="swiper-slide indice-item">
+                        <p>IBOV</p>
+                        <span>156.470</span>
+                        <span>-0,33%</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="language">
+                    <div class="language-item">
+                      <a href="#">
+                        <img src="./images/ICON-EN.svg" alt="English" />
+                        EN
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="inst">
+                    <a href="#">
+                      INSTITUCIONAL
+                      <img src="images/icon-world.svg" alt="World" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="content-right">
+                <button
+                  class="mobile-menu-toggle"
+                  id="mobileMenuToggle"
+                  aria-label="Menu"
+                >
+                  <span class="hamburger-line"></span>
+                  <span class="hamburger-line"></span>
+                  <span class="hamburger-line"></span>
+                </button>
+
+                <nav class="navigation">
+                  <div class="navigation-pages">
+                    <div class="menu-items dropdown">
+                      <a
+                        href="investir.html"
+                        class="link-menu-mobile-a dropdown-toggle"
+                      >
+                        <p>A Companhia</p>
+                      </a>
+                    </div>
+
+                    <div class="menu-items dropdown">
+                      <a href="#" class="link-menu-mobile-a dropdown-toggle">
+                        <p>Governança Corporativa</p>
+                      </a>
+                    </div>
+
+                    <div class="menu-items dropdown">
+                      <a
+                        href="fundos.html"
+                        class="link-menu-mobile-a dropdown-toggle"
+                      >
+                        <p>Informações Financeiras</p>
+                      </a>
+                    </div>
+
+                    <div class="menu-items dropdown">
+                      <a href="#" class="link-menu-mobile-a dropdown-toggle">
+                        <p>Serviços aos Investidores</p>
+                      </a>
+                    </div>
+
+                    <div class="dropdown-menu mega-menu">
+                      <div class="mega-menu-column">
+                        <a href="historico.html" class="dropdown-item"
+                          >Histórico</a
+                        >
+                        <a href="nosso-ecossistema.html" class="dropdown-item"
+                          >Nosso Ecossistema</a
+                        >
+                        <a href="nossas-unidades.html" class="dropdown-item"
+                          >Nossas Unidades de Negócios</a
+                        >
+                        <a href="aquisicoes.html" class="dropdown-item"
+                          >Aquisições</a
+                        >
+                      </div>
+
+                      <div class="mega-menu-column">
+                        <a
+                          href="composicao-acionaria.html"
+                          class="dropdown-item"
+                          >Composição Acionária</a
+                        >
+                        <a href="diretoria.html" class="dropdown-item"
+                          >Diretoria, Conselhos e Comitês</a
+                        >
+                        <a href="estatuto.html" class="dropdown-item"
+                          >Estatuto, Políticas, Códigos e Regimentos</a
+                        >
+                        <a href="form-cvm.html" class="dropdown-item"
+                          >Formulários CVM</a
+                        >
+                        <a href="conselhos.html" class="dropdown-item"
+                          >Reuniões de Conselho e Assembleias</a
+                        >
+                        <a href="mercado.html" class="dropdown-item"
+                          >Comunicação ao Mercado</a
+                        >
+                        <a href="esg.html" class="dropdown-item">ESG</a>
+                        <a href="governanca.html" class="dropdown-item"
+                          >Informe de Governança</a
+                        >
+                      </div>
+
+                      <div class="mega-menu-column">
+                        <a href="central-resultados.html" class="dropdown-item"
+                          >Central de Resultados</a
+                        >
+                        <a href="planilha.html" class="dropdown-item"
+                          >Planilha Dinâmica</a
+                        >
+                        <a href="cobertura-analistas.html" class="dropdown-item"
+                          >Cobertura de Analistas</a
+                        >
+                        <a href="#" class="dropdown-item"
+                          >Cotações e Gráficos</a
+                        >
+                        <a href="apresentacoes.html" class="dropdown-item"
+                          >Apresentações</a
+                        >
+                      </div>
+
+                      <div class="mega-menu-column">
+                        <a href="investor-day.html" class="dropdown-item"
+                          >Investor Day</a
+                        >
+                        <a href="documentos-cvm.html" class="dropdown-item"
+                          >Documentos CVM</a
+                        >
+                        <a href="calendario.html" class="dropdown-item"
+                          >Calendário Corporativo</a
+                        >
+                        <a href="fale-com-ri.html" class="dropdown-item"
+                          >Fale com RI</a
+                        >
+                        <a href="glossario.html" class="dropdown-item"
+                          >Glossário</a
+                        >
+                        <a
+                          href="perguntas-frequentes.html"
+                          class="dropdown-item"
+                          >Perguntas Frequentes</a
+                        >
+                        <a href="mailing.html" class="dropdown-item"
+                          >Cadastre-se no Mailing</a
+                        >
+                        <a href="notas-legais.html" class="dropdown-item"
+                          >Notas Legais</a
+                        >
+                        <a href="" class="dropdown-item"
+                          >Política de Privacidade</a
+                        >
+                        <a href="entrevistas.html" class="dropdown-item"
+                          >Entrevistas e Podcasts</a
+                        >
+                      </div>
+                    </div>
+
+                    <div class="header-actions">
+                      <div class="search-bar">
+                        <a href="#">
+                          <img src="./images/icon_search.svg" alt="Search" />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </header>
+      </div>
+    </div>
+
+    <div class="accessibility-bar">
+      <div class="accessibility-bar-content">
+        <button
+          type="button"
+          class="accessibility-btn toggle-mode"
+          id="toggleMode"
+          aria-label="Alterar contraste"
+          data-bs-toggle="tooltip"
+          data-bs-placement="left"
+          data-bs-title="Contraste"
+        >
+          <img src="./images/icon-contraste.svg" class="icon" alt="Contraste" />
+          <span class="text">Contraste</span>
+        </button>
+
+        <button
+          type="button"
+          class="accessibility-btn increase-font"
+          id="increaseFont"
+          aria-label="Aumentar fonte"
+          data-bs-toggle="tooltip"
+          data-bs-placement="left"
+          data-bs-title="Aumentar fonte"
+        >
+          <img
+            src="./images/icon-increase-font.svg"
+            class="icon"
+            alt="Aumentar fonte"
+          />
+          <span class="text">Aumentar fonte</span>
+        </button>
+
+        <button
+          type="button"
+          class="accessibility-btn decrease-font"
+          id="decreaseFont"
+          aria-label="Diminuir fonte"
+          data-bs-toggle="tooltip"
+          data-bs-placement="left"
+          data-bs-title="Diminuir fonte"
+        >
+          <img
+            src="./images/icon-redduce-font.svg"
+            class="icon"
+            alt="Diminuir fonte"
+          />
+          <span class="text">Diminuir fonte</span>
+        </button>
+
+        <a
+          href="#"
+          class="accessibility-btn decrease-link"
+          aria-label="Informações de acessibilidade"
+          data-bs-toggle="tooltip"
+          data-bs-placement="left"
+          data-bs-title="Acessibilidade"
+        >
+          Acessibilidade
+        </a>
+      </div>
+    </div>
+
+    <div class="header-internal">
+      <div class="img-header">
+        <img
+          src="images/header-internal.jpg"
+          id="ContentInternal_idEscpaanimacao"
+          alt="banner internal"
+        />
+      </div>
+      <div class="container container-full">
+        <div class="main-content-header-internal">
+          <div class="title-internal">
+            <h1>Resultado da busca</h1>
+          </div>
+          <div class="breadcrumb">
+            <a href="Default.aspx"> Home </a><a href=""> Resultado da busca </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="busca p-80">
+      <div class="container container-full">
+        <div class="content-result-search">
+          <div class="title-busca">
+            <h3>O que encontramos com as seguintes palavras</h3>
+
+            <ul class="list-resultados-busca">
+              <li>"resultados"</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="content-search">
+          <div class="item-list" data-aos="fade-up" data-aos-delay="200">
+            <div class="date-list">
+              <p>00/00/00</p>
+            </div>
+
+            <div class="link-list">
+              <a href="#">
+                <img src="images/icon-pdf-secondary.svg" alt="" />
+
+                Planilha Dinâmica
+              </a>
+            </div>
+          </div>
+
+          <div class="item-list" data-aos="fade-up" data-aos-delay="200">
+            <div class="date-list">
+              <p>00/00/00</p>
+            </div>
+
+            <div class="link-list">
+              <a href="#">
+                <img src="images/icon-pdf-secondary.svg" alt="" />
+
+                Planilha Dinâmica
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="container-first-footer">
+        <div class="container container-full container-first-footer-s">
+          <div class="content-first-footer">
+            <button
+              class="button-mapa-site"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseMapSite"
+              aria-expanded="false"
+              aria-controls="collapseMapSite"
+            >
+              Mapa do site
+            </button>
+
+            <div class="mailing-footer">
+              <a href="#">Cadastre-se no Mailing</a>
+              <a href="">Fale com RI</a>
+              <a href="#">FAQ</a>
+            </div>
+
+            <div class="cotacao-footer">
+              <img src="images/ibrx100b3.png" alt="" />
+              <img src="images/ibrx100b3.png" alt="" />
+              <img src="images/ibrx100b3.png" alt="" />
+              <img src="images/ibrx100b3.png" alt="" />
+              <img src="images/ibrx100b3.png" alt="" />
+              <img src="images/ibrx100b3.png" alt="" />
+              <img src="images/ibrx100b3.png" alt="" />
+              <img src="images/ibrx100b3.png" alt="" />
+              <img src="images/ibrx100b3.png" alt="" />
+            </div>
+          </div>
+
+          <div class="collapse" id="collapseMapSite">
+            <div class="list-menu-footer">
+              <div class="item-menu-footer">
+                <h5>Governança</h5>
+                <a href="#">Composição Acionária</a>
+                <a href="#">Conselho, Diretoria e Comitês</a>
+                <a href="#">Estatuto, Códigos e Políticas</a>
+              </div>
+
+              <div class="item-menu-footer">
+                <h5>Governança</h5>
+                <a href="#">Composição Acionária</a>
+                <a href="#">Conselho, Diretoria e Comitês</a>
+                <a href="#">Estatuto, Códigos e Políticas</a>
+              </div>
+
+              <div class="item-menu-footer">
+                <h5>Governança</h5>
+                <a href="#">Composição Acionária</a>
+                <a href="#">Conselho, Diretoria e Comitês</a>
+                <a href="#">Estatuto, Códigos e Políticas</a>
+              </div>
+
+              <div class="item-menu-footer">
+                <h5>Governança</h5>
+                <a href="#">Composição Acionária</a>
+                <a href="#">Conselho, Diretoria e Comitês</a>
+                <a href="#">Estatuto, Códigos e Políticas</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-second-footer">
+        <div class="container container-full">
+          <div class="content-second-footer">
+            <p>Locaweb (LWSA) © Todos os direitos reservados 2025</p>
+
+            <div class="links-second-footer">
+              <a href="#">Termos e Condições</a>
+              <a href="#">Política de Privacidade</a>
+            </div>
+
+            <div class="social-footer">
+              <a href="#"
+                ><img src="images/icon-instagram.svg" alt="Instagram"
+              /></a>
+              <a href="#"
+                ><img src="images/icon-linkedin.svg" alt="Linkedin"
+              /></a>
+              <a href="#"
+                ><img src="images/icon-youtube.svg" alt="Youtube"
+              /></a>
+            </div>
+
+            <a href="#"
+              ><img
+                src="https://sites.astri.solutions/selo-footer/selo-white.svg"
+                alt="Logo Astri"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="js/main.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/timeline.js"></script>
+  </body>
+</html>

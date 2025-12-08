@@ -4,11 +4,11 @@
   align-items: center;
 
   * {
-    font-family: Montserrat;
+    font-family: var(--font-rf-dewi);
   }
 
   .text-404 {
-    color: $color-primary;
+    color: var(--color-primary);
     text-align: center;
     font-size: rem(48);
     font-weight: 800;
@@ -16,8 +16,8 @@
   }
 
   .page-not-found {
-    color: $color-primary;
-    font-family: Montserrat;
+    color: var(--color-primary);
+    font-family: var(--font-rf-dewi);
     font-size: 24px;
     font-style: normal;
     font-weight: 500;
@@ -33,12 +33,12 @@
     text-align: center;
     margin-top: 0;
     margin-bottom: 16px;
-    font-family: Montserrat;
+    font-family: var(--font-rf-dewi);
   }
 
   p {
     color: #666;
-    font-family: Montserrat;
+    font-family: var(--font-rf-dewi);
     text-align: center;
   }
 

@@ -204,11 +204,11 @@ body.atuacao-page {
   font-weight: 400;
   line-height: 100%;
 
-  background: #ae8215;
+  background: var(--color-primary);
   color: #fff;
 
   &:hover {
-    background: #936800;
+    background: var(--color-primary);
     color: #f7f7f7;
   }
 }
@@ -224,11 +224,11 @@ body.atuacao-page {
   line-height: 116%;
   transition: all 0.4s cubic-bezier(0.25, 0.1, 0.25, 1);
 
-  background: #936800;
+  background: var(--color-primary);
   color: #fff;
 
   &:hover {
-    background: #936800;
+    background: var(--color-primary);
     color: #fff;
   }
 }
@@ -236,9 +236,9 @@ body.atuacao-page {
 .main-link {
   text-decoration: none;
   width: fit-content;
-  color: #936800;
+  color: var(--color-primary);
   border-radius: 4px;
-  background: #936800;
+  background: var(--color-primary);
   font-family: Montserrat;
   font-size: 10px;
   font-style: normal;
@@ -248,7 +248,7 @@ body.atuacao-page {
   transition: all 0.4s cubic-bezier(0.25, 0.1, 0.25, 1);
 
   &:hover {
-    background: #936800;
+    background: var(--color-primary);
     color: #fcfcfc;
   }
 }
@@ -260,13 +260,13 @@ body.atuacao-page {
   .swiper-pagination-bullet {
     opacity: 1;
     margin: 0 8px !important;
-    border: 1px solid #936800;
+    border: 1px solid var(--color-primary);
     background-color: transparent;
     transition: all 0.4s cubic-bezier(0.25, 0.1, 0.25, 1);
   }
 
   .swiper-pagination-bullet-active {
-    background: #936800;
+    background: var(--color-primary);
     width: 80px;
     transition: all 0.4s cubic-bezier(0.25, 0.1, 0.25, 1);
     border-radius: 52px;
