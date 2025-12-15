@@ -227,81 +227,6 @@ header {
           }
         }
 
-        .indices-swiper {
-          @media (min-width: 1200px) {
-            display: flex;
-            align-items: center;
-            gap: 48px;
-
-            .swiper-wrapper {
-              display: flex;
-              align-items: center;
-              gap: 48px;
-              transform: none !important;
-            }
-
-            .swiper-slide {
-              width: auto !important;
-              position: relative !important;
-              transform: none !important;
-            }
-          }
-
-          @media (max-width: 1200px) {
-            overflow: hidden;
-            display: flex;
-            align-items: center;
-            width: 165px;
-
-            .swiper-wrapper {
-              display: flex;
-              align-items: center;
-            }
-
-            .swiper-slide {
-              width: 100% !important;
-              height: auto !important;
-              display: flex !important;
-              align-items: center;
-              flex-shrink: 0;
-            }
-          }
-
-          @media (max-width: 513px) {
-            width: 100%;
-          }
-
-          .indice-item {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            width: 100%;
-
-            @media (min-width: 1200px) {
-              width: auto;
-            }
-
-            p {
-              margin: 0;
-              color: #fff;
-              font-family: var(--font-rf-dewi);
-              font-size: 14px;
-              font-style: normal;
-              font-weight: 700;
-              line-height: 18px;
-            }
-
-            span {
-              color: #fff;
-              font-family: var(--font-rf-dewi);
-              font-size: 14px;
-              font-style: normal;
-              font-weight: 400;
-              line-height: 18px;
-            }
-          }
-        }
-
         .language {
           .language-item {
             padding: 2px 4px;
@@ -857,6 +782,81 @@ header {
           }
         }
       }
+    }
+  }
+}
+
+.indices-swiper {
+  @media (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+    gap: 48px;
+
+    .swiper-wrapper {
+      display: flex;
+      align-items: center;
+      gap: 48px;
+      transform: none !important;
+    }
+
+    .swiper-slide {
+      width: auto !important;
+      position: relative !important;
+      transform: none !important;
+    }
+  }
+
+  @media (max-width: 1200px) {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    width: 165px;
+
+    .swiper-wrapper {
+      display: flex;
+      align-items: center;
+    }
+
+    .swiper-slide {
+      width: 100% !important;
+      height: auto !important;
+      display: flex !important;
+      align-items: center;
+      flex-shrink: 0;
+    }
+  }
+
+  @media (max-width: 513px) {
+    width: 100%;
+  }
+
+  .indice-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+
+    @media (min-width: 1200px) {
+      width: auto;
+    }
+
+    p {
+      margin: 0;
+      color: #fff;
+      font-family: var(--font-rf-dewi);
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 18px;
+    }
+
+    span {
+      color: #fff;
+      font-family: var(--font-rf-dewi);
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 18px;
     }
   }
 }
